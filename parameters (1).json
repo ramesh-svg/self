@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "galleryName": {
+            "value": "ora2pg_gallery"
+        },
+        "imageDefinitionName": {
+            "value": "ora2pg_image_gallery"
+        },
+        "versionName": {
+            "value": "0.43.0"
+        },
+        "defaultReplicaCount": {
+            "value": 1
+        },
+        "excludedFromLatest": {
+            "value": false
+        },
+        "regionReplications": {
+            "value": [
+                {
+                    "name": "centralindia",
+                    "regionalReplicaCount": 1,
+                    "storageAccountType": "Standard_LRS"
+                }
+            ]
+        },
+        "location": {
+            "value": "centralindia"
+        }
+    }
+}
